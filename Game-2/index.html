@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>La serpiente</title>
+    <script src="js/main.js"></script>
+    <style>
+        #game{
+            height:50%;
+            padding: 0px;
+        }
+        .wall{
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            padding: 0px;
+        }
+        .snakeRight{
+            width: 10px;
+            height: 10px;
+            background-image: url("imgs/snake.png");
+            padding: 0px;
+        }
+        .snakeDown{
+            width: 10px;
+            height: 10px;
+            background-image: url("imgs/snake-down.png");
+            padding: 0px;
+        }
+        .snakeLeft{
+            width: 10px;
+            height: 10px;
+            background-image: url("imgs/snake-left.png");
+            padding: 0px;
+        }
+        .snakeUp{
+            width: 10px;
+            height: 10px;
+            background-image: url("imgs/snake-up.png");
+            padding: 0px;
+        }
+        .behind{
+            width: 10px;
+            height: 10px;
+            background-image: url("imgs/behind.png");
+            padding: 0px;
+        }
+        .apple{
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Snake</h1>
+    <div id="main">
+        <div id="score"></div>
+        <button id="stop">stop</button>
+        <div id="game"></div>
+
+        <form id= "datosgame">
+        <button id="startReset">start</button>
+        <value for="size">Playsize: </value>
+        <select name="size" id="size">
+            <option value="small">Small</option>
+            <option value="big">Big</option>
+        </select>
+
+
+        <value for="difficulty">Difficulty: </value>
+        <select name="difficulty" id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+            <option value="Vhard">Very Hard</option>
+            
+        </form>
+        
+    </div>
+  
+
+</body>
+
+</html>
